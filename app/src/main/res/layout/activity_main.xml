@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="422dp"
+        android:layout_height="758dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/design_default_color_primary" />
+
+    <ImageView
+        android:id="@+id/ivminus2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/ivminus1"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <ImageView
+        android:id="@+id/ivplus1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="499dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivplus2"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/ivplus2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivplus1"
+        app:srcCompat="@drawable/ic_add" />
+
+    <ImageView
+        android:id="@+id/ivminus1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="499dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivminus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_minus" />
+
+    <TextView
+        android:id="@+id/tvscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="18dp"
+        android:text="0"
+        android:textSize="100dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/ivplus1" />
+
+    <TextView
+        android:id="@+id/tvscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="0"
+        android:textSize="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivplus2"
+        app:layout_constraintEnd_toEndOf="@+id/tvscore1"
+        app:layout_constraintStart_toStartOf="@+id/tvscore1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:text="PLAYER 1"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivminus1"
+        app:layout_constraintStart_toEndOf="@+id/ivplus1"
+        app:layout_constraintTop_toTopOf="@+id/ivplus1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="23dp"
+        android:text="PLAYER 2"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivplus2"
+        app:layout_constraintEnd_toStartOf="@+id/ivminus2"
+        app:layout_constraintStart_toEndOf="@+id/ivplus2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
